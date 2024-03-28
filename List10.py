@@ -1,4 +1,4 @@
-def main(list_num):
+def main(list):
     """
     A list of numbers consisting of several elements is given. Return the largest between the first and last elements.
     Args:
@@ -6,4 +6,7 @@ def main(list_num):
     Returns:
         int: return answer
     """
-    return
+    if list[0]>list[-1]:
+        return list[0]
+    if list[0]<list[-1]:
+        return list[-1]
